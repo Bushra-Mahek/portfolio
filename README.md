@@ -14,6 +14,9 @@ The React Compiler is enabled on this template. See [this documentation](https:/
 Note: This will impact Vite dev & build performances.
 You can also try [the experimental native React Compiler support in plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#rust-react-compiler) by using `compiler: true` in the plugin options instead of using the Babel plugin.
 
+live link:
+https://portfolio-rhdn.onrender.com/
+
 ## Expanding the Oxlint configuration
 
 If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
