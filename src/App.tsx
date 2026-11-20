@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, type ChangeEvent } from "react";
 import {
   Terminal,
   Sparkles,
@@ -279,14 +279,14 @@ export default function App() {
   };
 
   // Allows previewing a local photo right inside the browser before hardcoding the URL
-  const handlePhotoSelect = (e) => {
+  const handlePhotoSelect = (e: ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (!file) return;
     const objectUrl = URL.createObjectURL(file);
     setLocalPhotoPreview(objectUrl);
   };
 
-  const scrollToSection = (id) => {
+  const scrollToSection = (id : string) => {
     setActiveNav(id);
     setMobileMenuOpen(false);
     const el = document.getElementById(id);
