@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  background-color: #05050a;
+  color: #f8fafc;
+}
